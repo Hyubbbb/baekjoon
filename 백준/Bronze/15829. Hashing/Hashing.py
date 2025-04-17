@@ -11,7 +11,7 @@ def hashing(l, word):
     result = 0
     for i in range(l):
         result += (ord(word[i])-96) * r**i
-    
-    return result
+        
+    return result%m
 
 print(hashing(l, word))
